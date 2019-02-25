@@ -17,7 +17,7 @@ dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
 }
 
-mainClassName = 'strategy.calculator.App'
+mainClassName = 'App'
 
 jacoco {
     toolVersion = "0.8.2"
