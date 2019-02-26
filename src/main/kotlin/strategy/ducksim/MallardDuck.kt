@@ -5,7 +5,8 @@ class MallardDuck : Duck() {
         quackBehavior = Quack()
         flyBehavior = FlyWithWings()
     }
-    fun display(){
+
+    fun display() {
         println("I am a Mallard Duck!")
     }
 }

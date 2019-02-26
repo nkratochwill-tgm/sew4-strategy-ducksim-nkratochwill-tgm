@@ -1,5 +1,5 @@
 package strategy.ducksim
 
-interface FlyBehavior{
+interface FlyBehavior {
     fun fly()
 }

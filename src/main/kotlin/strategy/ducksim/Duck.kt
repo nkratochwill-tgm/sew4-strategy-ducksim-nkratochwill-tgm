@@ -1,12 +1,13 @@
 package strategy.ducksim
 
-open class Duck{
+open class Duck {
     lateinit var quackBehavior: QuackBehavior
     lateinit var flyBehavior: FlyBehavior
-    fun performQuack(){
+    fun performQuack() {
         quackBehavior.quack()
     }
-    fun performFly(){
+
+    fun performFly() {
         flyBehavior.fly()
     }
 

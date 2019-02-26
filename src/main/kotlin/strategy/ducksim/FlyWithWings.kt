@@ -1,6 +1,6 @@
 package strategy.ducksim
 
-class FlyWithWings: FlyBehavior {
+class FlyWithWings : FlyBehavior {
     override fun fly() {
         println("I am flying!")
     }
