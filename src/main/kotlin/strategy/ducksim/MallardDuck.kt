@@ -6,6 +6,6 @@ class MallardDuck : Duck() {
         flyBehavior = FlyWithWings()
     }
     fun display(){
-        print("I am a Mallard Duck!")
+        println("I am a Mallard Duck!")
     }
 }

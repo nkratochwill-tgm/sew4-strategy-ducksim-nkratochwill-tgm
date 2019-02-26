@@ -6,6 +6,6 @@ class RubberDuck : Duck(){
         flyBehavior = CantFly()
     }
     fun display(){
-        print("I am a Rubber Duck!")
+        println("I am a Rubber Duck!")
     }
 }

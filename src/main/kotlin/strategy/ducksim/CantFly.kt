@@ -2,6 +2,6 @@ package strategy.ducksim
 
 class CantFly: FlyBehavior {
     override fun fly() {
-        print("I can not fly!")
+        println("I can not fly!")
     }
 }
