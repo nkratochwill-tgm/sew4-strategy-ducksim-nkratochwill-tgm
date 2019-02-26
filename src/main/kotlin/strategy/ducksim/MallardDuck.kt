@@ -6,7 +6,7 @@ class MallardDuck : Duck() {
         flyBehavior = FlyWithWings()
     }
 
-    fun display() {
+    override fun display() {
         println("I am a Mallard Duck!")
     }
 }

@@ -6,7 +6,7 @@ class RubberDuck : Duck() {
         flyBehavior = CantFly()
     }
 
-    fun display() {
+    override fun display() {
         println("I am a Rubber Duck!")
     }
 }

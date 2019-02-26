@@ -7,12 +7,12 @@ import org.junit.Test
 import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 
-class RoboDuckTest {
-    lateinit var roboDuck: Duck
+class MallardDuckTest {
+    lateinit var mallardDuck: Duck
     lateinit var output: ByteArrayOutputStream
     @Before
     fun setUp() {
-        roboDuck = RoboDuck()
+        mallardDuck = MallardDuck()
         output = ByteArrayOutputStream()
         System.setOut(PrintStream(output))
     }
@@ -23,35 +23,35 @@ class RoboDuckTest {
 
     @Test
     fun display() {
-        roboDuck.display()
-        assertEquals("Bzbz I am a Robo Duck!\n", output.toString())
+        mallardDuck.display()
+        assertEquals("I am a Mallard Duck!\n", output.toString())
     }
 
     @Test
     fun setQuackBehavior() {
-        roboDuck.quackBehavior = CantQuack()
-        roboDuck.performQuack()
+        mallardDuck.quackBehavior = CantQuack()
+        mallardDuck.performQuack()
         assertEquals("I can not make Noise!\n", output.toString())
 
     }
 
     @Test
     fun setFlyBehavior() {
-        roboDuck.flyBehavior = CantFly()
-        roboDuck.performFly()
+        mallardDuck.flyBehavior = CantFly()
+        mallardDuck.performFly()
         assertEquals("I can not fly!\n", output.toString())
     }
 
     @Test
     fun performQuack() {
-        roboDuck.performQuack()
-        assertEquals("Bzbz Quack!\n", output.toString())
+        mallardDuck.performQuack()
+        assertEquals("Quack!\n", output.toString())
     }
 
     @Test
     fun performFly() {
-        roboDuck.performFly()
-        assertEquals("I am flying with rockets!\n", output.toString())
+        mallardDuck.performFly()
+        assertEquals("I am flying!\n", output.toString())
 
     }
 }

@@ -6,7 +6,7 @@ class RoboDuck : Duck() {
         quackBehavior = ElectricQuack()
     }
 
-    fun display() {
+    override fun display() {
         println("Bzbz I am a Robo Duck!")
     }
 }

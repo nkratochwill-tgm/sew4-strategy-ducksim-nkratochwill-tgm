@@ -1,6 +1,6 @@
 package strategy.ducksim
 
-open class Duck {
+abstract class Duck {
     lateinit var quackBehavior: QuackBehavior
     lateinit var flyBehavior: FlyBehavior
     fun performQuack() {
@@ -10,5 +10,7 @@ open class Duck {
     fun performFly() {
         flyBehavior.fly()
     }
+
+    abstract fun display()
 
 }
