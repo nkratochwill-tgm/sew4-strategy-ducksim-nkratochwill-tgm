@@ -1,4 +1,5 @@
 package strategy.ducksim
+
 open class Duck{
     lateinit var quackBehavior: QuackBehavior
     lateinit var flyBehavior: FlyBehavior

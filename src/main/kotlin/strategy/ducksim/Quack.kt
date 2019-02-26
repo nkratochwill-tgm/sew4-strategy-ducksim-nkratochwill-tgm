@@ -1,6 +1,6 @@
 package strategy.ducksim
 
-class Quack:QuackBehavior{
+class Quack: QuackBehavior {
     override fun quack(){
         print("Quack!")
     }
