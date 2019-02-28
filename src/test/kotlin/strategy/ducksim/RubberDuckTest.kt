@@ -8,17 +8,17 @@ import java.io.ByteArrayOutputStream
 import java.io.PrintStream
 
 /**
- * Test for robo duck
+ * Test for rubber duck
  * To accomplish testing of print functions, we are using an ByteArrayOutputStream and setting it as our main system output,
  * therefore every console output gets forwarded to the aforementioned OutputStream
  * it is now possible to compare the print functions to our expected results.
  */
-class RoboDuckTest {
-    private lateinit var roboDuck: Duck
+class RubberDuckTest {
+    private lateinit var rubberDuck: Duck
     private lateinit var output: ByteArrayOutputStream
     @Before
     fun setUp() {
-        roboDuck = RoboDuck()
+        rubberDuck = RubberDuck()
         output = ByteArrayOutputStream()
         System.setOut(PrintStream(output))
     }
@@ -29,35 +29,35 @@ class RoboDuckTest {
 
     @Test
     fun display() {
-        roboDuck.display()
-        assertEquals("Bzbz I am a Robo Duck!\n", output.toString())
+        rubberDuck.display()
+        assertEquals("I am a Rubber Duck!\n", output.toString())
     }
 
     @Test
     fun setQuackBehavior() {
-        roboDuck.quackBehavior = CantQuack()
-        roboDuck.performQuack()
+        rubberDuck.quackBehavior = CantQuack()
+        rubberDuck.performQuack()
         assertEquals("I can not make Noise!\n", output.toString())
 
     }
 
     @Test
     fun setFlyBehavior() {
-        roboDuck.flyBehavior = CantFly()
-        roboDuck.performFly()
-        assertEquals("I can not fly!\n", output.toString())
+        rubberDuck.flyBehavior = FlyWithWings()
+        rubberDuck.performFly()
+        assertEquals("I am flying!\n", output.toString())
     }
 
     @Test
     fun performQuack() {
-        roboDuck.performQuack()
-        assertEquals("Bzbz Quack!\n", output.toString())
+        rubberDuck.performQuack()
+        assertEquals("Squeak!\n", output.toString())
     }
 
     @Test
     fun performFly() {
-        roboDuck.performFly()
-        assertEquals("I am flying with rockets!\n", output.toString())
+        rubberDuck.performFly()
+        assertEquals("I can not fly!\n", output.toString())
 
     }
 }

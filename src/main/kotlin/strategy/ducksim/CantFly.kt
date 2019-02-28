@@ -1,7 +1,7 @@
 package strategy.ducksim
 
 /**
- * Overwrites fly() from interface Flybehavior to make non flyable behavior possible.
+ * Overwrites fly() from interface Flybehavior to make non flyable behavior possible
  */
 class CantFly : FlyBehavior {
     override fun fly() {

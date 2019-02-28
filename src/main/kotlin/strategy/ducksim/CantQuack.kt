@@ -1,7 +1,7 @@
 package strategy.ducksim
 
 /**
- * Overwrites quack() from interface Quackbehavior to make non quackable behavior possible.
+ * Overwrites quack() from interface Quackbehavior to make non quackable behavior possible
  */
 class CantQuack : QuackBehavior {
     override fun quack() {

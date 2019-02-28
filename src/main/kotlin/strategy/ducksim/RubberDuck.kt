@@ -9,7 +9,7 @@ class RubberDuck : Duck() {
      * primary constructor, which initializes standard behavior for a rubber duck
      */
     init {
-        quackBehavior = CantQuack()
+        quackBehavior = Squeak()
         flyBehavior = CantFly()
     }
 
